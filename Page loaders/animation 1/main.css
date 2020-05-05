@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    overflow-y: hidden;
+    background-color: #222;
+}
+
+.rectangle {
+    position: relative;
+    margin-right: 5px;
+    width: 12px;
+    height: 50px;
+    background-color: orange;
+}
+
+.animate-1 {
+    animation: white-rectangle 0.7s ease-in 0s infinite alternate;
+}
+
+.animate-2 {
+    animation: white-rectangle 0.7s ease-in 0.1s infinite alternate;
+}
+
+.animate-3 {
+    animation: white-rectangle 0.7s ease-in 0.2s infinite alternate;
+}
+
+@keyframes white-rectangle {
+    0% {
+        height: 50px;
+    }
+    50% {
+        height: 50px;
+    }
+    100% {
+        height: 100px;
+    }
+}
