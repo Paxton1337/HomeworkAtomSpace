@@ -40,10 +40,10 @@ const numbers_2 = {
     secondNumber_2: 10,
 };
 
-const { firstNumber_2, secondNumber_2 } = numbers_2;
+
 
 const divide_2 = (numbers_2) => {
-
+    const { firstNumber_2, secondNumber_2 } = numbers_2;
     return firstNumber_2 / secondNumber_2;
 }
 
@@ -59,10 +59,11 @@ let numbers_3 = {};
 numbers_3["firstNumber_3"] = prompt("Введите первое число");
 numbers_3["secondNumber_3"] = prompt("Введите второе число");
 
-let { firstNumber_3, secondNumber_3 } = numbers_3;
+
 
 
 const divide_3 = (numbers_3) => {
+    let { firstNumber_3, secondNumber_3 } = numbers_3;
     return firstNumber_3 / secondNumber_3;
 }
 
