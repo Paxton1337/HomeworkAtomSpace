@@ -3,7 +3,7 @@ console.log(myArray);
 
 myArray.forEach((val, index) => {
   if (typeof val === "object") {
-    myArray.pop(val);
+    myArray.splice(index,1);
   }
 });
 console.log(myArray);
