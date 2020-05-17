@@ -7,11 +7,11 @@ let timeout;
 
 const intervalFunction = (count) => {
   ++counter1;
-  return console.log(`Timeout ${counter1}`);
+  return console.log(`Interval ${counter1}`);
 };
 const timeoutFuntion = (count) => {
   ++counter2;
-  return console.log(`Iterval ${counter2}`);
+  return console.log(`Timeout ${counter2}`);
 };
 
 startButton.addEventListener("click", () => {
