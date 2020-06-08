@@ -17,7 +17,7 @@ function getObject(obj) {
     getProp(obj);
     	
     function getProp(o) {
-        for(var prop in o) {
+        for(let prop in o) {
             if(typeof(o[prop]) === 'object') {
                 getProp(o[prop]);
             } else {
