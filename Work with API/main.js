@@ -6,6 +6,9 @@
   const titleJson = await title.json();
   console.log(titleJson);
   const mainContainerEl = document.querySelector("#main-container");
+  const subTitle = document.createElement("div");
+  subTitle.innerHTML = `Ниже представлен список аниме:`;
+  mainContainerEl.append(subTitle);
   titleJson.forEach((anime) => {
     const div = document.createElement("div");
     const span = document.createElement("span");
