@@ -5,11 +5,18 @@
 
   let titleJson = await title.json();
   console.log(titleJson);
-  for (let i = 0; i < titleJson.length; i++) {
-    if (titleJson[i].links.flickr_images == 0) {
-      delete titleJson[i];
+  // for (let j = 0; j < (titleJson.length / 10); j++) {
+  //   delete titleJson[j];
+  // }
+  for (let j = 0; j < titleJson.length; j++) {
+    if (titleJson[j].links.flickr_images == 0) {
+      delete titleJson[j];
     }
   }
+  for (let i = 0; i < (titleJson.length - 30); i++) {
+    delete titleJson[i];
+  }
+  console.log(titleJson);
 
   const mainContainerEl = document.querySelector(".main-container");
   titleJson.forEach((props) => {
