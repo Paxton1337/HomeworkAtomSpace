@@ -26,3 +26,12 @@ a{
   border-radius: 5px;
   box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
 }
+.launch-imgs{
+    width: 100px;
+    height: 100px;
+}
+.divForImg{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+}

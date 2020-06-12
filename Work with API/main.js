@@ -28,10 +28,20 @@
     flightNumber.innerHTML = `Flight number: ${props.flight_number}`;
     mainDiv.append(flightNumber);
 
-    const img = document.createElement("div");
-    img.innerHTML = `<img width="100px" height="100px"  src="${props.links.flickr_images}"/>`;
-    mainDiv.append(img);
+    const divForImg = document.createElement("div");
+    divForImg.setAttribute("class", "divForImg");
 
+    const img = document.createElement("img");
+    img.setAttribute("src", props.links.flickr_images[0]);
+    img.setAttribute("class", "launch-imgs");
+    divForImg.append(img);
+
+    const img2 = document.createElement("img");
+    img2.setAttribute("src", props.links.flickr_images[1]);
+    img2.setAttribute("class", "launch-imgs");
+    divForImg.append(img2);
+
+    mainDiv.append(divForImg);
     mainContainerEl.append(mainDiv);
   });
 })();
