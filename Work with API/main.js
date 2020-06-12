@@ -1,25 +1,37 @@
 (async () => {
-  const title = await fetch("https://ghibliapi.herokuapp.com/films", {
+  const title = await fetch("https://api.spacexdata.com/v3/launches", {
     method: "GET",
   });
-  
-  const titleJson = await title.json();
+
+  let titleJson = await title.json();
   console.log(titleJson);
-  const mainContainerEl = document.querySelector("#main-container");
-  const subTitle = document.createElement("div");
-  subTitle.innerHTML = `Ниже представлен список аниме:`;
-  mainContainerEl.append(subTitle);
-  titleJson.forEach((anime) => {
-    const div = document.createElement("div");
-    const span = document.createElement("span");
-    span.innerHTML= `Director: ${anime.director} // `;
-    div.append(span);
-    const span2 = document.createElement("span");
-    span2.innerHTML= `Title: ${anime.title} // `;
-    div.append(span2);
-    const span3 = document.createElement("span");
-    span3.innerHTML= `Release date: ${anime.release_date} `;
-    div.append(span3);
-    mainContainerEl.append(div);
+  for (let i = 0; i < titleJson.length; i++) {
+    if (titleJson[i].links.flickr_images == 0) {
+      delete titleJson[i];
+    }
+  }
+
+  const mainContainerEl = document.querySelector(".main-container");
+  titleJson.forEach((props) => {
+    const mainDiv = document.createElement("div");
+    mainDiv.setAttribute("class", "mainDiv");
+
+    const launchData = document.createElement("span");
+    launchData.innerHTML = `Launch Data: ${props.launch_date_local} `;
+    mainDiv.append(launchData);
+
+    const missionName = document.createElement("span");
+    missionName.innerHTML = `Mission name: ${props.mission_name} `;
+    mainDiv.append(missionName);
+
+    const flightNumber = document.createElement("span");
+    flightNumber.innerHTML = `Flight number: ${props.flight_number}`;
+    mainDiv.append(flightNumber);
+
+    const img = document.createElement("div");
+    img.innerHTML = `<img width="100px" height="100px"  src="${props.links.flickr_images}"/>`;
+    mainDiv.append(img);
+
+    mainContainerEl.append(mainDiv);
   });
 })();
