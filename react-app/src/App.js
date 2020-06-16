@@ -1,15 +1,24 @@
 import React from "react";
 import "./App.css";
-import SuperButton from "./SuperButton";
+import { Test } from "./Test";
 
 const App = () => {
-  console.log("app");
-  const [notHidden, setNotHidden] = React.useState(true);
+  const label = "Test text";
+  const obj = {
+    hello: "world",
+    hello1: "world",
+  };
   return (
-    <div>
-      <button onClick={() => setNotHidden(false)}>Set hidden</button>
-      {notHidden && <SuperButton />}
-    </div>
+    <Test
+      label={label}
+      {...obj}
+      testLabel="Test component label"
+      submit={() => {
+        console.log("SUBMIT");
+      }}
+    >
+      <button>Props Button</button>
+    </Test>
   );
 };
 
