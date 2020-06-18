@@ -1,6 +1,4 @@
 //первый вариант
-
-
 let numbers_1 = {
     firstNumber: null,
     secondNumber: null,
