@@ -13,7 +13,12 @@
       delete titleJson[j];
     }
   }
-  for (let i = 0; i < (titleJson.length - 30); i++) {
+  // for (let j = 0; j < titleJson.length; j++) {
+  //   if (titleJson[j].links.flickr_images == 1) {
+  //     delete titleJson[j];
+  //   }
+  // }
+  for (let i = 0; i < titleJson.length - 30; i++) {
     delete titleJson[i];
   }
   console.log(titleJson);
@@ -40,14 +45,16 @@
 
     const img = document.createElement("img");
     img.setAttribute("src", props.links.flickr_images[0]);
-    img.setAttribute("class", "launch-imgs");
+    img.setAttribute("class", "launch-img");
     divForImg.append(img);
 
-    const img2 = document.createElement("img");
-    img2.setAttribute("src", props.links.flickr_images[1]);
-    img2.setAttribute("class", "launch-imgs");
-    divForImg.append(img2);
+    if (props.links.flickr_images.length > 1) {
+      const img2 = document.createElement("img");
 
+      img2.setAttribute("src", props.links.flickr_images[1]);
+      img2.setAttribute("class", "launch-img-2");
+      divForImg.append(img2);
+    }
     mainDiv.append(divForImg);
     mainContainerEl.append(mainDiv);
   });
