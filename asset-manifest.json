@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/HomeworkAtomSpace/react-app/static/css/main.3d036460.chunk.css",
+    "main.js": "/HomeworkAtomSpace/react-app/static/js/main.6b09b788.chunk.js",
+    "main.js.map": "/HomeworkAtomSpace/react-app/static/js/main.6b09b788.chunk.js.map",
+    "runtime-main.js": "/HomeworkAtomSpace/react-app/static/js/runtime-main.33085af0.js",
+    "runtime-main.js.map": "/HomeworkAtomSpace/react-app/static/js/runtime-main.33085af0.js.map",
+    "static/js/2.bd741662.chunk.js": "/HomeworkAtomSpace/react-app/static/js/2.bd741662.chunk.js",
+    "static/js/2.bd741662.chunk.js.map": "/HomeworkAtomSpace/react-app/static/js/2.bd741662.chunk.js.map",
+    "index.html": "/HomeworkAtomSpace/react-app/index.html",
+    "precache-manifest.30d2af9064164b7e8465720d8d750540.js": "/HomeworkAtomSpace/react-app/precache-manifest.30d2af9064164b7e8465720d8d750540.js",
+    "service-worker.js": "/HomeworkAtomSpace/react-app/service-worker.js",
+    "static/css/main.3d036460.chunk.css.map": "/HomeworkAtomSpace/react-app/static/css/main.3d036460.chunk.css.map",
+    "static/js/2.bd741662.chunk.js.LICENSE.txt": "/HomeworkAtomSpace/react-app/static/js/2.bd741662.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.33085af0.js",
+    "static/js/2.bd741662.chunk.js",
+    "static/css/main.3d036460.chunk.css",
+    "static/js/main.6b09b788.chunk.js"
+  ]
+}
