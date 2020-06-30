@@ -3,24 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navmenu</title>
+    <title>Navbar</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap&subset=cyrillic"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="greeting">Привет, это навигатор для папок</div>
-    <ul>
-      <li><a href="Page loaders/index.html">Page loaders</a></li>
-      <li><a href="Functions divide/index.html">Functions divide</a></li>
-      <li><a href="Web-components/index.html">Web-components</a></li>
-      <li><a href="Recursion etc/index.html">Recursion and etc</a></li>
-      <li><a href="Work with API/index.html">Work with API</a></li>
-      <li><a href="react-app">React application</a></li>
-      <li>В ожидании....</li>
-    </ul>
+    <div class="wrapper">
+      <div class="wrapper__header">
+        <span class="header__text">Navbar</span>
+      </div>
+      <div class="wrapper__content">
+        <ul class="content__links">
+          <li><a href="Page loaders/index.html" draggable="false">Page loaders</a></li>
+          <li><a href="Functions divide/index.html" draggable="false">Functions divide</a></li>
+          <li><a href="Web-components/index.html" draggable="false">Web-components</a></li>
+          <li><a href="Recursion etc/index.html" draggable="false">Recursion and etc</a></li>
+          <li><a href="Work with API/index.html" draggable="false">Work with API</a></li>
+          <li><a href="react-app" draggable="false">React application</a></li>
+          <li class="content__links-soon">Coming soon...</li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
 <!-- reload -->

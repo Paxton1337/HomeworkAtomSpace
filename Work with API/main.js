@@ -45,12 +45,11 @@
 
     const img = document.createElement("img");
     img.setAttribute("src", props.links.flickr_images[0]);
-    img.setAttribute("class", "launch-img");
+    img.setAttribute("class", "launch-imgf");
     divForImg.append(img);
 
     if (props.links.flickr_images.length > 1) {
       const img2 = document.createElement("img");
-
       img2.setAttribute("src", props.links.flickr_images[1]);
       img2.setAttribute("class", "launch-img-2");
       divForImg.append(img2);
