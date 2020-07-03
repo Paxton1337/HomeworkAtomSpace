@@ -45,7 +45,7 @@
 
     const img = document.createElement("img");
     img.setAttribute("src", props.links.flickr_images[0]);
-    img.setAttribute("class", "launch-imgf");
+    img.setAttribute("class", "launch-img");
     divForImg.append(img);
 
     if (props.links.flickr_images.length > 1) {
