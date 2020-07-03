@@ -158,7 +158,8 @@ body {
   align-items: center;
 }
 
-.content__links-soon ,.content__links li a {
+.content__links-soon,
+.content__links li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,11 +177,11 @@ body {
   user-select: none;
 }
 
-.content__links li a:hover{
+.content__links li a:hover {
   background-color: #fff;
   color: #222;
 }
 
-.content__links-soon:hover{
+.content__links-soon:hover {
   color: #666;
 }
